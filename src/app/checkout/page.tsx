@@ -68,6 +68,8 @@ const CheckoutPage = () => {
         {cart.map((item) => (
           <div key={item.id} className="flex items-center border-b border-gray-200 pb-4 mb-4">
             <Image
+            width={80}
+            height={80}
               src={item.image}
               alt={item.name}
               className="w-20 h-20 object-cover rounded-lg mr-4"

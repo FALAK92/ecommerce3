@@ -112,6 +112,8 @@ const ProductCard = () => {
             {/* Product Image */}
             <div className="relative">
               <Image
+              width={300}
+              height={300}
                 src={product.image}
                 alt={product.description}
                 className="w-full h-64 object-cover rounded-t-lg"

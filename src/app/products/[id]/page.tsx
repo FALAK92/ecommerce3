@@ -73,6 +73,8 @@ const ProductDetail: React.FC = () => {
         {/* Product Image */}
         <div className="w-full md:w-1/2">
           <Image
+          width={500}
+          height={500}
             src={product.image}
             alt={product.description}
             className="w-full rounded-lg shadow-md"

@@ -21,6 +21,7 @@ function Navbar() {
     // LocalStorage se cart ka data fetch karna
     const storedCart = localStorage.getItem("cart");
     const cart = storedCart ? JSON.parse(storedCart) : [];
+    
 
     // Cart me total items ka count calculate karna
     const totalItems = cart.reduce(
@@ -29,7 +30,9 @@ function Navbar() {
     );
 
     setCartCount(totalItems);
-  }, [cartCount]);
+  }, []);
+
+
 
 
   return (
@@ -90,7 +93,7 @@ function Navbar() {
           <Link href="/cart">
           <FaShoppingCart size={28} className="hover:text-gray-600" />
           <span className="absolute top-4 right-5 mr-16 bg-red-500 text-white text-xs font-bold rounded-full px-2 py-1">
-                {cartCount}
+                {cartCount || 0}
             </span>
 
           </Link>
@@ -151,7 +154,7 @@ function Navbar() {
               <Link href="/cart">
               <FaShoppingCart size={24} className="hover:text-gray-600" />
               <span className="absolute top-17 right-3 bottom-9  bg-red-500 text-white text-xs font-bold rounded-full px-2 py-1">
-                {cartCount}
+                {cartCount || 0}
             </span>
               </Link>
             </button>
@@ -163,4 +166,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
 
