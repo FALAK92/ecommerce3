@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 interface CartItem {
   id: number;
@@ -66,7 +67,7 @@ const CheckoutPage = () => {
         <h2 className="text-2xl font-semibold text-gray-700 mb-6">Order Summary</h2>
         {cart.map((item) => (
           <div key={item.id} className="flex items-center border-b border-gray-200 pb-4 mb-4">
-            <img
+            <Image
               src={item.image}
               alt={item.name}
               className="w-20 h-20 object-cover rounded-lg mr-4"

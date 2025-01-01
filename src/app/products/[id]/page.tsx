@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowLeftIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Product {
   id: number;
@@ -71,7 +72,7 @@ const ProductDetail: React.FC = () => {
       <div className="flex flex-col md:flex-row items-start gap-8">
         {/* Product Image */}
         <div className="w-full md:w-1/2">
-          <img
+          <Image
             src={product.image}
             alt={product.description}
             className="w-full rounded-lg shadow-md"
