@@ -40,7 +40,7 @@ const ContactPage = () => {
           <div className="bg-white rounded-lg shadow-lg p-8">
             <h2 className="text-3xl font-semibold text-neutral-500 mb-6">Get in Touch</h2>
             <p className="text-lg text-gray-500 mb-4">
-              Feel free to reach out to us for any inquiries. We're here to help!
+              Feel free to reach out to us for any inquiries. We &apos; re here to help!
             </p>
 
             <div className="space-y-6">

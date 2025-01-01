@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { HeartIcon, ArrowUpIcon, ShareIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Product {
   id: number;
@@ -110,7 +111,7 @@ const ProductCard = () => {
           >
             {/* Product Image */}
             <div className="relative">
-              <img
+              <Image
                 src={product.image}
                 alt={product.description}
                 className="w-full h-64 object-cover rounded-t-lg"

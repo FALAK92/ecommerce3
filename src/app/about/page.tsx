@@ -36,7 +36,7 @@ const AboutPage = () => {
                 customer satisfaction.
               </p>
               <p className="text-lg">
-                Whether you're looking for the latest fashion trends, innovative gadgets, or
+                Whether you &apos; re looking for the latest fashion trends, innovative gadgets, or
                 premium home accessories, we have it all. Our carefully curated collection ensures
                 that you get only the best products at competitive prices.
               </p>
